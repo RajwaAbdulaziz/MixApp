@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/movieFragment">
+
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.tuwaiq.mixapp.ui.movie.MovieFragment"
+        android:label="movie_fragment"
+        tools:layout="@layout/movie_fragment" >
+        <action
+            android:id="@+id/action_movieFragment_to_roomFragment"
+            app:destination="@id/roomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomFragment"
+        android:name="com.tuwaiq.mixapp.ui.room.RoomFragment"
+        android:label="room_fragment"
+        tools:layout="@layout/room_fragment" >
+        <action
+            android:id="@+id/action_roomFragment_to_apiFragment"
+            app:destination="@id/apiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/apiFragment"
+        android:name="com.tuwaiq.mixapp.ui.api.ApiFragment"
+        android:label="api_fragment"
+        tools:layout="@layout/api_fragment" />
+</navigation>

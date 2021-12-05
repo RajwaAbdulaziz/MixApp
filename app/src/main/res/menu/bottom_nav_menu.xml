@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_movies"
+        android:icon="@drawable/ic_baseline_movie_24"
+        android:title="@string/movies" />
+    <item
+        android:id="@+id/navigation_room_db"
+        android:icon="@drawable/ic_baseline_data_usage_24"
+        android:title="@string/roomdb" />
+    <item
+        android:id="@+id/navigation_api"
+        android:icon="@drawable/ic_baseline_airplanemode_active_24"
+        android:title="@string/api" />
+</menu>
